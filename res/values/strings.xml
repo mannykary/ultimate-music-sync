@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ultimate Music Sync</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="search_artist_helper">Enter Artist</string>
+    <string name="search_track_helper">Enter Track</string>
+    <string name="search_btn">Search</string>
+    <string name="clear_btn">Clear</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="welcome_msg">
+        Welcome to Ultimate Music Sync! Choose an option below. 
+    </string>
+    <string name="go_to_search_btn">Scrobble Track</string>
+    <string name="connection_error">Connection Error</string>
+	<string name="xml_error">XML Error</string>
+    
+</resources>

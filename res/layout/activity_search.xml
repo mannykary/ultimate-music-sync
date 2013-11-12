@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SearchActivity" >
+
+    <EditText
+        android:id="@+id/searchBoxArtist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/search_artist_helper"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+    
+        <EditText
+        android:id="@+id/searchBoxTrack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchBoxArtist"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/search_track_helper"
+        android:ems="10" >
+    </EditText>
+    
+    <Button
+        android:id="@+id/btnGetResults"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchBoxTrack"
+        android:onClick="getSearchBoxText"
+        android:text="@string/search_btn" />
+    
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below  ="@+id/btnGetResults"
+        android:onClick="getSearchBoxText"
+        android:text="@string/clear_btn" />
+
+    <WebView
+        android:id="@+id/searchResults"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/btnClear"
+        android:onClick="clearActivity" >
+    </WebView>
+
+</RelativeLayout>
