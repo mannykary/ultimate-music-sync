@@ -20,7 +20,7 @@
         <requestFocus />
     </EditText>
     
-        <EditText
+    <EditText
         android:id="@+id/searchBoxTrack"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,11 +30,31 @@
         android:ems="10" >
     </EditText>
     
+    <EditText
+        android:id="@+id/inputUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchBoxTrack"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Username"
+        android:ems="10" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/inputPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputUserName"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Password"
+        android:ems="10"
+        android:inputType="textPassword" />
+       
     <Button
         android:id="@+id/btnGetResults"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/searchBoxTrack"
+        android:layout_below="@+id/inputPass"
         android:onClick="getSearchBoxText"
         android:text="@string/search_btn" />
     
